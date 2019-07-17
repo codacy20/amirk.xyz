@@ -5,10 +5,10 @@ import Header from './Header'
 
 const App: React.FC = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 
