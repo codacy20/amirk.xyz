@@ -10,9 +10,15 @@ function Header() {
 
     return (
         <header id="header">
-            <div className="logo">
-                <span className="icon fa-gem"></span>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    {/* <li><a href="#elements">Elements</a></li> */}
+                </ul>
+            </nav>
             <div className="content">
                 <div className="inner">
                     <h1>AmirK</h1>
@@ -25,7 +31,7 @@ function Header() {
                     <li><a href="#work">Work</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#elements">Elements</a></li>
+                    {/* <li><a href="#elements">Elements</a></li> */}
                 </ul>
             </nav>
         </header>
