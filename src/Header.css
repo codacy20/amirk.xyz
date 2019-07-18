@@ -71,6 +71,7 @@
     border-top-width: 1px;
     border-bottom-width: 1px;
     max-width: 100%;
+    text-transform: uppercase;
 }
 
 #header .content .inner {
