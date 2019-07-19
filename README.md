@@ -1,6 +1,6 @@
-# Mystery Box [![Netlify Status](https://api.netlify.com/api/v1/badges/1b17c897-d3c5-454d-a1a5-85dee34d487a/deploy-status)](https://app.netlify.com/sites/romantic-chandrasekhar-e5a83d/deploys)
+# Mystery Box [![Netlify Status](https://api.netlify.com/api/v1/badges/1b17c897-d3c5-454d-a1a5-85dee34d487a/deploy-status)](https://app.netlify.com/sites/amirk/deploys)
 
-This application takes care of collecting customer details after the sales are made.
+<!-- This application takes care of collecting customer details after the sales are made. -->
 
 ## Getting Started
 
@@ -13,24 +13,24 @@ What things you need to install the software and how to install them
 ```
 node v8.11.3
 ```
-
+<!-- 
 ## MockUps
 
-![Mock up 1](https://raw.githubusercontent.com/Craners/mysteryBox-api/master/artboard1.png)
+![Mock up 1](https://raw.githubusercontent.com/Craners/mysteryBox-api/master/artboard1.png) -->
 
-### Run via npm
+### Run 
 
 This should help you get running.
 
 ```
-npm install
+yarn install
 ```
 
 ```
-npm run serve
+yarn start
 ```
 the application will run on localhost:3000.
-
+<!-- 
 ### Run as container
 ```
 docker build .
@@ -41,7 +41,7 @@ docker run --name=api -d -i -t -p 3000:3000 <imageID>
 ```
 the application will run on localhost:3000.
 
-please note: you are going to need the `.env` file in the root directory.
+please note: you are going to need the `.env` file in the root directory. -->
 
 <!-- ## Running the tests
 
@@ -69,7 +69,7 @@ Add additional notes about how to deploy this on a live system -->
 
 ## Built With
 
-- [NestJs v4.0](https://docs.nestjs.com/) - The web framework used
+- [ReactJs](https://reactjs.org/) 
 
 <!-- * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds -->
@@ -85,7 +85,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 - **Amir Kiumarsi** - [Codacy20](https://github.com/codacy20)
-- **Radu Alexander** - [Radu](https://github.com/RaduAlex)
 
 ## License
 
