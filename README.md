@@ -1,4 +1,4 @@
-# Mystery Box [![Netlify Status](https://api.netlify.com/api/v1/badges/1b17c897-d3c5-454d-a1a5-85dee34d487a/deploy-status)](https://app.netlify.com/sites/amirk/deploys)
+# AmirK.xyz [![Netlify Status](https://api.netlify.com/api/v1/badges/1b17c897-d3c5-454d-a1a5-85dee34d487a/deploy-status)](https://app.netlify.com/sites/amirk/deploys)
 
 <!-- This application takes care of collecting customer details after the sales are made. -->
 

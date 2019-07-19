@@ -12,9 +12,9 @@ function Header() {
         <header id="header">
             <nav>
                 <ul>
-                    <li><a href="#intro">about</a></li>
+                    <li><a href="#about">about</a></li>
                     <li><a href="#work">work</a></li>
-                    <li><a href="#about">articles</a></li>
+                    <li><a href="#articles">articles</a></li>
                     {/* <li><a href="#contact">Contact</a></li> */}
                     {/* <li><a href="#elements">Elements</a></li> */}
                 </ul>
@@ -27,9 +27,9 @@ function Header() {
             </div>
             <nav>
                 <ul>
-                    <li><a href="#intro">contact</a></li>
-                    <li><a href="#work">projects</a></li>
-                    <li><a href="#about">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#blog">blog</a></li>
                     {/* <li><a href="#contact">Contact</a></li> */}
                     {/* <li><a href="#elements">Elements</a></li> */}
                 </ul>
