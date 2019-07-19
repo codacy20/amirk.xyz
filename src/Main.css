@@ -84,7 +84,7 @@
                 height: 2.5rem;
                 border-radius: 100%;
                 background-position: center;
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgd2lkdGg9IjE3OTIiIGhlaWdodD0iMTc5MiIgdmlld0JveD0iMCAwIDE3OTIgMTc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTQ5MCAxMzIycTAgNDAtMjggNjhsLTEzNiAxMzZxLTI4IDI4LTY4IDI4dC02OC0yOGwtMjk0LTI5NC0yOTQgMjk0cS0yOCAyOC02OCAyOHQtNjgtMjhsLTEzNi0xMzZxLTI4LTI4LTI4LTY4dDI4LTY4bDI5NC0yOTQtMjk0LTI5NHEtMjgtMjgtMjgtNjh0MjgtNjhsMTM2LTEzNnEyOC0yOCA2OC0yOHQ2OCAyOGwyOTQgMjk0IDI5NC0yOTRxMjgtMjggNjgtMjh0NjggMjhsMTM2IDEzNnEyOCAyOCAyOCA2OHQtMjggNjhsLTI5NCAyOTQgMjk0IDI5NHEyOCAyOCAyOCA2OHoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=");
                 background-size: 20px 20px;
                 background-repeat: no-repeat;
             }
