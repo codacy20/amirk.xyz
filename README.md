@@ -71,6 +71,10 @@ Add additional notes about how to deploy this on a live system -->
 
 - [ReactJs](https://reactjs.org/) 
 
+## CMS and Posts
+
+- [Strapi](https://amirkxyz-cms.herokuapp.com/) 
+
 <!-- * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds -->
 
