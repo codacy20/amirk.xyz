@@ -12,8 +12,8 @@ class Article extends React.Component<any, any> {
         };
     }
 
-    public componentDidMount() {
-        fetch(`https://amirkxyz-cms.herokuapp.com/posts?title=${this.state.id}`)
+    public async componentWillMount() {
+        await fetch(`https://amirkxyz-cms.herokuapp.com/posts?title=${this.state.id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -37,17 +37,16 @@ class Article extends React.Component<any, any> {
             return <div>Error: {error.message}</div>;
         }
         else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return (
+                <article id={id}>
+                    <h2 className="major">{id}</h2>
+                    <span className="image main"><img src="images/pic01.jpg" alt="" /></span>
+                    <p>this is still loading ...</p>
+                </article >
+            );
         }
         else {
             return (
-                // <ul>
-                //     {items.map(item => (
-                //         <li key={item.name}>
-                //             {item.name} {item.price}
-                //         </li>
-                //     ))}
-                // </ul>
                 <article id={id}>
                     <h2 className="major">{id}</h2>
                     <span className="image main"><img src="images/pic01.jpg" alt="" /></span>
