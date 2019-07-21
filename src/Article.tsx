@@ -41,7 +41,6 @@ class Article extends React.Component<any, any> {
             return (
                 <article id={id}>
                     <h2 className="major">{id}</h2>
-                    <span className="image main"><img src="images/pic01.jpg" alt="" /></span>
                     <p>this is still loading ...</p>
                 </article >
             );
@@ -50,7 +49,6 @@ class Article extends React.Component<any, any> {
             return (
                 <article id={id}>
                     <h2 className="major">{id}</h2>
-                    <span className="image main"><img src="images/pic01.jpg" alt="" /></span>
                     <pre>{items}</pre>
                 </article >
             );
