@@ -1,4 +1,5 @@
 import React from 'react';
+import './Article.css';
 
 class Article extends React.Component<any, any> {
 
@@ -50,7 +51,7 @@ class Article extends React.Component<any, any> {
                 <article id={id}>
                     <h2 className="major">{id}</h2>
                     <span className="image main"><img src="images/pic01.jpg" alt="" /></span>
-                    <p>{items}</p>
+                    <pre>{items}</pre>
                 </article >
             );
         }
