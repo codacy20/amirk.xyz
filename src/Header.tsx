@@ -15,8 +15,6 @@ function Header() {
                     <li><a href="#about">about</a></li>
                     <li><a href="#work">work</a></li>
                     <li><a href="#articles">articles</a></li>
-                    {/* <li><a href="#contact">Contact</a></li> */}
-                    {/* <li><a href="#elements">Elements</a></li> */}
                 </ul>
             </nav>
             <div className="content">
@@ -29,9 +27,7 @@ function Header() {
                 <ul>
                     <li><a href="#contact">contact</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li><a href="#blog">blog</a></li>
-                    {/* <li><a href="#contact">Contact</a></li> */}
-                    {/* <li><a href="#elements">Elements</a></li> */}
+                    <li><a href="/AmirKiumarsiCV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
                 </ul>
             </nav>
         </header>

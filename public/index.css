@@ -88,6 +88,10 @@ video {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+a:link, a:visited {
+    color: black;
+}
+
 article,
 aside,
 details,

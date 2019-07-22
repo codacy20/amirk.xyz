@@ -49,7 +49,11 @@ class Article extends React.Component<any, any> {
             return (
                 <article id={id}>
                     <h2 className="major">{id}</h2>
-                    <pre>{items}</pre>
+                    <pre>
+                        <p>
+                            {items}
+                        </p>
+                    </pre>
                 </article >
             );
         }
