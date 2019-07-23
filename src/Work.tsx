@@ -1,7 +1,7 @@
 import React from 'react';
-import './Article.css';
+import IPost from './Types/Post';
 
-class Article extends React.Component<any, any> {
+export default class Work extends React.Component<any, any>{
 
     constructor(props: any) {
         super(props);
@@ -13,15 +13,20 @@ class Article extends React.Component<any, any> {
         };
     }
 
-    public async componentWillMount() {
-        await fetch(`https://amirkxyz-cms.herokuapp.com/posts?title=${this.state.id}`)
+    public async componentDidMount() {
+        fetch(`https://amirkxyz-cms.herokuapp.com/posts?title_contains=${this.state.id}`)
             .then(res => res.json())
             .then(
                 (result) => {
-                    this.setState({
-                        isLoaded: true,
-                        items: result[0].body
-                    });
+                    if (result.length > 0) {
+                        result.forEach((element: IPost) => {
+                            const joined = this.state.items.concat(element.body);
+                            this.setState({
+                                isLoaded: true,
+                                items: joined
+                            });
+                        });
+                    }
                 },
                 (error) => {
                     this.setState({
@@ -29,7 +34,7 @@ class Article extends React.Component<any, any> {
                         isLoaded: true
                     });
                 }
-            )
+            );
     }
 
     public render() {
@@ -41,7 +46,7 @@ class Article extends React.Component<any, any> {
             return (
                 <article id={id}>
                     <h2 className="major">{id}</h2>
-                    <p>this is still loading ...</p>
+                    <p>{id} is still loading ...</p>
                 </article >
             );
         }
@@ -59,5 +64,3 @@ class Article extends React.Component<any, any> {
         }
     }
 }
-
-export default Article;
