@@ -1,5 +1,6 @@
 import React from 'react';
 import IPost from './Types/Post';
+import './Work.css'
 
 export default class Work extends React.Component<any, any>{
 
@@ -51,14 +52,29 @@ export default class Work extends React.Component<any, any>{
             );
         }
         else {
+            const elemets = items.map((el: any) => {
+                return (
+                    <tr>
+                        <td>{id}</td>
+                        <td>{el}</td>
+                    </tr>
+                )
+            })
+
             return (
                 <article id={id}>
                     <h2 className="major">{id}</h2>
-                    <pre>
-                        <p>
-                            {items}
-                        </p>
-                    </pre>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {elemets}
+                        </tbody>
+                    </table>
                 </article >
             );
         }
