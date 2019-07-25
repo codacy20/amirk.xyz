@@ -57,7 +57,7 @@ export default class Work extends React.Component<any, any>{
         else {
             const elemets = titles.map((el: any, index: any) => {
                 return (
-                    <tr>
+                    <tr key={index}>
                         <td>{el}</td>
                         <td>{companies[index]}</td>
                     </tr>
