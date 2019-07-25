@@ -1,5 +1,5 @@
 import React from 'react';
-import IPost from './Types/Post';
+import IWork from './Types/Post';
 import './Work.css'
 
 export default class Work extends React.Component<any, any>{
@@ -7,24 +7,27 @@ export default class Work extends React.Component<any, any>{
     constructor(props: any) {
         super(props);
         this.state = {
+            companies: [],
             error: null,
             id: this.props.id,
             isLoaded: false,
-            items: []
+            titles: [],
         };
     }
 
     public async componentDidMount() {
-        fetch(`https://amirkxyz-cms.herokuapp.com/posts?title_contains=${this.state.id}`)
+        fetch(`https://amirkxyz-cms.herokuapp.com/works`)
             .then(res => res.json())
             .then(
                 (result) => {
                     if (result.length > 0) {
-                        result.forEach((element: IPost) => {
-                            const joined = this.state.items.concat(element.body);
+                        result.forEach((element: IWork) => {
+                            const titles = this.state.titles.concat(element.title);
+                            const joined2 = this.state.companies.concat(element.company);
                             this.setState({
+                                companies: joined2,
                                 isLoaded: true,
-                                items: joined
+                                titles,
                             });
                         });
                     }
@@ -39,7 +42,7 @@ export default class Work extends React.Component<any, any>{
     }
 
     public render() {
-        const { isLoaded, error, items, id } = this.state;
+        const { isLoaded, error, titles, id, companies } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         }
@@ -52,11 +55,11 @@ export default class Work extends React.Component<any, any>{
             );
         }
         else {
-            const elemets = items.map((el: any) => {
+            const elemets = titles.map((el: any, index: any) => {
                 return (
                     <tr>
-                        <td>{id}</td>
                         <td>{el}</td>
+                        <td>{companies[index]}</td>
                     </tr>
                 )
             })
