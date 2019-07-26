@@ -70,8 +70,8 @@ export default class Work extends React.Component<any, any>{
                     <table>
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Description</th>
+                                <th>Role</th>
+                                <th>Company</th>
                             </tr>
                         </thead>
                         <tbody>
