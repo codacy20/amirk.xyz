@@ -12,3 +12,10 @@ export default interface IWork {
     company: string,
     year: number
 }
+
+export default interface IProject {
+    title: string,
+    id: number,
+    description: string,
+    link: string
+}
