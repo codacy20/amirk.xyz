@@ -1,12 +1,7 @@
 import * as React from 'react';
 import './Header.css';
 
-// export interface Props{
-
-//     name: string;
-// }
-
-function Header() {
+export default function Header() {
 
     return (
         <header id="header">
@@ -33,5 +28,3 @@ function Header() {
         </header>
     );
 }
-
-export default Header;
