@@ -1,5 +1,6 @@
 import React from 'react';
 import { IProject } from '../Types/Models'
+import { GitHub } from 'react-feather';
 
 export default class Project extends React.Component<any, any> {
 
@@ -10,6 +11,7 @@ export default class Project extends React.Component<any, any> {
             error: null,
             id: this.props.id,
             isLoaded: false,
+            languages: [],
             links: [],
             names: [],
         }
@@ -22,10 +24,12 @@ export default class Project extends React.Component<any, any> {
                 if (result.length > 0) {
                     result.forEach((element: IProject) => {
                         const names = this.state.names.concat(element.name);
-                        const joined2 = this.state.links.concat(element.html_url);
+                        const links = this.state.links.concat(element.html_url);
+                        const languages = this.state.languages.concat(element.language);
                         this.setState({
                             isLoaded: true,
-                            links: joined2,
+                            languages,
+                            links,
                             names,
                         });
                     });
@@ -39,7 +43,7 @@ export default class Project extends React.Component<any, any> {
     }
 
     public render() {
-        const { error, id, isLoaded, links, names } = this.state;
+        const { error, id, isLoaded, links, names, languages } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         }
@@ -56,7 +60,12 @@ export default class Project extends React.Component<any, any> {
                 return (
                     <tr key={index}>
                         <td>{el}</td>
-                        <td>{links[index]}</td>
+                        <td>{languages[index]}</td>
+                        <td>
+                            <a href={links[index]} target="_blank" rel="noopener noreferrer">
+                                <GitHub />
+                            </a>
+                        </td>
                     </tr>
                 )
             })
@@ -68,6 +77,7 @@ export default class Project extends React.Component<any, any> {
                         <thead>
                             <tr>
                                 <th>Name</th>
+                                <th>Language</th>
                                 <th>Link</th>
                             </tr>
                         </thead>

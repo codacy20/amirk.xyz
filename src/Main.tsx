@@ -1,8 +1,10 @@
 import React from 'react';
+import { GitHub, Linkedin, Mail, Send } from 'react-feather';
 import About from './About';
 import './Main.css';
 import Project from './Project/Project';
 import Work from './Work';
+
 
 const Main: React.FC = () => {
 
@@ -22,22 +24,22 @@ const Main: React.FC = () => {
                 <ul className="icons">
                     <li>
                         <a href="https://github.com/codacy20" target="_blank" rel="noopener noreferrer">
-                            <i data-feather="github"></i>
+                            <GitHub />
                         </a>
                     </li>
                     <li>
                         <a href="https://linkedin.com/in/amirkiumarsi/" target="_blank" rel="noopener noreferrer">
-                            <i data-feather="linkedin"></i>
+                            <Linkedin />
                         </a>
                     </li>
                     <li>
                         <a href="https://t.me/rt_amir" target="_blank" rel="noopener noreferrer">
-                            <i data-feather="send"></i>
+                            <Send />
                         </a>
                     </li>
                     <li>
                         <a href="mailto:amir-rt@live.com">
-                            <i data-feather="mail"></i>
+                            <Mail />
                         </a>
                     </li>
                 </ul>
