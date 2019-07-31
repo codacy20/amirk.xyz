@@ -1,11 +1,11 @@
-export default interface IPost {
+export interface IPost {
     body: object,
     id: number,
     title: string,
     image: []
 }
 
-export default interface IWork {
+export interface IWork {
     title: string,
     id: number,
     description: string,
@@ -13,9 +13,10 @@ export default interface IWork {
     year: number
 }
 
-export default interface IProject {
-    title: string,
+export interface IProject {
+    name: string,
     id: number,
     description: string,
-    link: string
+    html_url: string,
+    language: string
 }

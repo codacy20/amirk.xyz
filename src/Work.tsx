@@ -1,5 +1,5 @@
 import React from 'react';
-import IWork from './Types/Post';
+import { IWork } from './Types/Models';
 import './Work.css'
 
 export default class Work extends React.Component<any, any>{
@@ -55,7 +55,7 @@ export default class Work extends React.Component<any, any>{
             );
         }
         else {
-            const elemets = titles.map((el: any, index: any) => {
+            const elements = titles.map((el: any, index: any) => {
                 return (
                     <tr key={index}>
                         <td>{el}</td>
@@ -75,7 +75,7 @@ export default class Work extends React.Component<any, any>{
                             </tr>
                         </thead>
                         <tbody>
-                            {elemets}
+                            {elements}
                         </tbody>
                     </table>
                 </article >
