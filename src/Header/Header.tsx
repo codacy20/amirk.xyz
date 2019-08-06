@@ -11,7 +11,7 @@ export default function Header() {
                     <ul>
                         <li><a href="#about">about</a></li>
                         <li><a href="#work">work</a></li>
-                        <li><a href="#articles">articles</a></li>
+                        <li><a href="#articles">book shelf</a></li>
                     </ul>
                 </nav>
                 <div className="content">
