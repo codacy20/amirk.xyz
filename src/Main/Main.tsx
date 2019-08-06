@@ -1,7 +1,7 @@
 import React from 'react';
 import { GitHub, Linkedin, Mail, Send } from 'react-feather';
 import About from '../About/About';
-import './Main.css';
+// import './Main.css';
 import Project from '../Project/Project';
 import Work from '../Work/Work';
 

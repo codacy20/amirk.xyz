@@ -1,6 +1,6 @@
 import React from 'react';
 import { IWork } from '../Types/Models';
-import './Work.css'
+// import './Work.css'
 
 export default class Work extends React.Component<any, any>{
 
