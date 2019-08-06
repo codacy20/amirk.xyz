@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Footer from '../Footer/Footer';
-// import './Header.css';
-
 export default function Header() {
 
     return (

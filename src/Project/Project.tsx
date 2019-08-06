@@ -1,6 +1,6 @@
 import React from 'react';
-import { IProject } from '../Types/Models'
 import { GitHub } from 'react-feather';
+import { IProject } from '../Types/Models'
 
 export default class Project extends React.Component<any, any> {
 
