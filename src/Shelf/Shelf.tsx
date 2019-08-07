@@ -16,7 +16,7 @@ export default class Shelf extends React.Component<any, any> {
     }
 
     public async componentDidMount() {
-        await fetch('http://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/66046857.xml?shelf=read&key=txiCgPhlzu8oBGReIp3dQ')
+        await fetch('https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/66046857.xml?shelf=read&key=txiCgPhlzu8oBGReIp3dQ')
             .then(response => response.text())
             .then((response) => {
                 parseString(response, (err, result) => {
