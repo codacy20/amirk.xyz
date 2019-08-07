@@ -1,3 +1,4 @@
+import * as _ from "lodash";
 import React from 'react';
 import { IWork } from '../Types/Models';
 
@@ -20,6 +21,7 @@ export default class Work extends React.Component<any, any>{
             .then(
                 (result) => {
                     if (result.length > 0) {
+                        result = _.orderBy(result, ['id'], ['desc'])
                         result.forEach((element: IWork) => {
                             const titles = this.state.titles.concat(element.title);
                             const joined2 = this.state.companies.concat(element.company);

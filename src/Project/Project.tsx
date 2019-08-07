@@ -1,3 +1,4 @@
+import * as _ from "lodash";
 import React from 'react';
 import { GitHub } from 'react-feather';
 import { IProject } from '../Types/Models'
@@ -22,6 +23,7 @@ export default class Project extends React.Component<any, any> {
             .then(res => res.json())
             .then((result) => {
                 if (result.length > 0) {
+                    result = _.orderBy(result, ['created_at'], ['desc'])
                     result.forEach((element: IProject) => {
                         const names = this.state.names.concat(element.name);
                         const links = this.state.links.concat(element.html_url);
