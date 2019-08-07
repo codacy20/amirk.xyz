@@ -7,12 +7,14 @@
     "@types/node": "12.6.1",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
+    "@types/xml2js": "^0.4.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-feather": "^2.0.3",
     "react-scripts": "3.0.1",
     "tslint": "^5.18.0",
-    "typescript": "3.5.3"
+    "typescript": "3.5.3",
+    "xml2js": "^0.4.19"
   },
   "scripts": {
     "start": "react-scripts start",

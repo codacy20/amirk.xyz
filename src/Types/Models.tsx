@@ -20,3 +20,9 @@ export interface IProject {
     html_url: string,
     language: string
 }
+
+export interface IBook {
+    authors: [],
+    title: [],
+    link: string
+}

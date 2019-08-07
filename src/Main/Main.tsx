@@ -2,6 +2,7 @@ import React from 'react';
 import { GitHub, Linkedin, Mail, Send } from 'react-feather';
 import About from '../About/About';
 import Project from '../Project/Project';
+import Shelf from '../Shelf/Shelf';
 import Work from '../Work/Work';
 
 
@@ -11,12 +12,7 @@ const Main: React.FC = () => {
         <div id="main">
             <About id="about" />
             <Work id="work" />
-
-            <article id="articles">
-                <h2 className="major">articles</h2>
-                <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-                <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-            </article>
+            <Shelf id="shelf" />
 
             <article id="contact">
                 <h2 className="major">contact</h2>
