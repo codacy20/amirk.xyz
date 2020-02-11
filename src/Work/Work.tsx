@@ -1,6 +1,7 @@
 import * as _ from "lodash";
 import React from 'react';
 import { IWork } from '../Types/Models';
+import Loader from "react-loader-spinner";
 
 export default class Work extends React.Component<any, any>{
 
@@ -49,9 +50,14 @@ export default class Work extends React.Component<any, any>{
         }
         else if (!isLoaded) {
             return (
-                <article id={id}>
-                    <h2 className="major">{id}</h2>
-                    <p>{id} is still loading ...</p>
+                <article id={id} className="loader">
+                    <Loader
+                        type="MutatingDots"
+                        color="#00BFFF"
+                        height={100}
+                        width={100}
+                    />
+                    <p>Please be patient</p>
                 </article >
             );
         }
